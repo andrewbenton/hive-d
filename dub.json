@@ -1,0 +1,28 @@
+{
+    "name": "hive-d",
+    "authors": [
+        "Andrew Benton"
+    ],
+    "dependencies": {
+        "thrift": "~>1.0.1",
+        "saslwrapped": ">=0.0.2"
+    },
+    "configurations": [
+        {
+            "name": "default",
+            "excludedSourceFiles": [
+                "source/hive/thrift/TCLIService_server.skeleton.d"
+            ]
+        },
+        {
+            "name": "test_server",
+            "targetType": "executable",
+            "targetName": "test_server"
+        }
+    ],
+    "targetPath": "build",
+    "targetType": "library",
+    "description": "A thrift connection to Hive",
+    "copyright": "Copyright © 2016, Andrew Benton",
+    "license": "BSL-1.0"
+}
